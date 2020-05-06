@@ -6,9 +6,10 @@ library(mgcv)
 library(gridExtra)
 library("xtable")
 library( htmltools)
+library(htmlwidgets)
 
 setwd('C:/Users/rnussba1/OneDrive/ARK/ARK - Science/Madagascar_pratincole_publication')
-d <- read_excel('./data.xlsx', sheet = "data")
+d <- read_excel('./data/data.xlsx', sheet = "data")
 
 # Filter
 df = d %>%
@@ -21,7 +22,7 @@ df = d %>%
   mutate(popup = paste('<b>Number</b>: ', number, 
                        '<br><b>Date</b>: ',date,
                        '<br><b>Observer</b>: ', observer,
-                       '<b>Validity</b>: ', validity,
+                       '<br><b>Validity</b>: ', validity,
                        '<br><b>Picture</b>: ', picture,
                        '<br><b>Description</b>: ', description,
                        '<br><b>Source</b>: ', source
@@ -30,7 +31,7 @@ df = d %>%
 # Map
 leaflet::leaflet(df) %>%
   leaflet::addTiles() %>%
-  leaflet::addCircleMarkers(lng = ~longitude, lat = ~latitude, popup = ~popup)
+  leaflet::addAwesomeMarkers(lng = ~longitude, lat = ~latitude, popup = ~popup)
 
 
 df %>% 

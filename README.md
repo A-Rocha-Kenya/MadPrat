@@ -12,10 +12,10 @@ We collected all available sightings of Madagascar Pratincole outside of their b
 - observation.org: no obs in East Africa
 - various publications
 
-All these sightings were aggregated in a [spreasheet](data/data.csv).
+All these sightings were aggregated in a [spreasheet](https://github.com/A-Rocha-Kenya/MadPrat/blob/master/data/data.csv).
 
 ## Analysis
-Currently in progress, preliminary analyis is performed with R and [some visualization are avaiable](https://htmlpreview.github.io/?https://github.com/a-rocha-kenya/MadPrat/blob/master/analysis/analysis.html).
+Currently in progress, preliminary analyis is performed with R and [some visualization are avaiable](https://a-rocha-kenya.github.io/MadPrat/analysis/analysis.html).
 
 ## References
 - Ash, S. (1975). Four species of birds new to Ethiopia and other notes. 97(1), 4–9.
